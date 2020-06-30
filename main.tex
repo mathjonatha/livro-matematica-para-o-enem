@@ -1,0 +1,379 @@
+\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
+
+\input{structure.tex} % Insert the commands.tex file which contains the majority of the structure behind the template
+
+%\hypersetup{pdftitle={Title},pdfauthor={Author}} % Uncomment and fill out to include PDF metadata for the author and title of the book
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begingroup
+\thispagestyle{empty} % Suppress headers and footers on the title page
+\begin{tikzpicture}[remember picture,overlay]
+\node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{background.pdf}};
+\draw (current page.center) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering Matemática no ENEM\\[15pt] % Book title
+{\Large Monitoria AnnWay}\\[20pt] % Subtitle
+{\huge Lucas, Marcelo e Matheus}}}; % Author name
+\end{tikzpicture}
+\vfill
+\endgroup
+
+%----------------------------------------------------------------------------------------
+%	COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
+
+\newpage
+~\vfill
+\thispagestyle{empty}
+
+\noindent Copyright \copyright\ 2020 Monitoria AnnWay\\ % Copyright notice
+
+\noindent \textsc{Published by Publisher}\\ % Publisher
+
+\noindent \textsc{http://annway.github.io/}\\ % URL
+
+\noindent Licensed under the Creative Commons Attribution-NonCommercial 3.0 Unported License (the ``License''). You may not use this file except in compliance with the License. You may obtain a copy of the License at \url{http://creativecommons.org/licenses/by-nc/3.0}. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \textsc{``as is'' basis, without warranties or conditions of any kind}, either express or implied. See the License for the specific language governing permissions and limitations under the License.\\ % License information, replace this with your own license (if any)
+
+\noindent \textit{Primeira versão, junho de 2020} % Printing/edition date
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\usechapterimagefalse % If you don't want to include a chapter image, use this to toggle images off - it can be enabled later with \usechapterimagetrue
+
+\chapterimage{chapter_head_1.pdf} % Table of contents heading image
+
+\pagestyle{empty} % Disable headers and footers for the following pages
+
+\tableofcontents % Print the table of contents itself
+
+\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right side of the book
+
+\pagestyle{fancy} % Enable headers and footers again
+
+
+\chapter{Sobre o projeto}
+Sabemos que os assuntos abordados no ENEM são vastos, afinal são muitas as disciplinas que os estudantes têm contato durante a vida escolar. Mesmo uma única disciplina como história, por exemplo, cobra uma gama enorme de informação e conhecimento por parte dos estudantes. Portanto, nada melhor que organizar e priorizar seu tempo de estudo.
+
+Por isso, Elaboramos este documento com o intuito de lhe ajudar. Elencamos os 10 assuntos que possuem maior número de questões no ENEM na área do conhecimento da Matemática e suas Aplicações. Além de você saber quais são os assuntos mais exigidos, também saberá o que é preciso pra estudá-los. A lista segue do assunto mais cobrado ao mesmo cobrado.
+
+
+\part{Matemática Básica}
+
+
+\chapterimage{chapter_head_2.pdf}
+\chapter{Aritmética}
+    \section{Operações básicas }
+    \subsection{Conjuntos dos numero inteiros, naturais e racionais}
+
+
+\chapter{Sistemas de Unidades de Medidas}
+(LEMBRAR DE COLOCAR AS IMAGENS)
+\\O Sistema Métrico é um sistema internacional de medições que determina as unidades a serem utilizadas por cada uma das medidas, além de suas transformações. A unidade fundamental desse sistema é o metro (m), porém, cada medida tem sua unidade padrão, de acordo com o Sistema Internacional de Unidades. 
+
+\section{Medidas de comprimento}
+As medidas de comprimento são os mecanismos de medição mais utilizados. A unidade fundamental das medidas de comprimento é o metro (m). 
+\subsection{Múltiplos de metro}
+\begin{itemize}
+	\item Quilômetro(km) $= 1000m = 10^3m$
+	\item Hectômetro (hm)  = 100m = $10^2$m
+	\item Decâmetro (dam)= 10m 
+	
+\end{itemize}
+
+\subsection{Submúltiplos de metro}
+\begin{itemize}
+	\item Decimetro(dm) = 0,1m = $10^{-1}m$
+	\item centímetro (cm) = 0,01m = $10^{-2}m$
+	\item Milímetro (mm)= 0,001m = $10^{-3}m$
+\end{itemize}
+\section{Medidas de Superfície}
+As medidas de superfície são as utilizadas na medição de
+áreas. Sua unidade fundamental é o metro quadrado ($m^2$).
+OBS: COLOCAR UM QUADRADO AQUI
+\subsection{Múltiplos de metro quadrado($m^2$)}
+\begin{itemize}
+	\item Quilômetro quadrado $(km^2) = 1.000.000 m^2 = 10^6 m^2$
+	\item Hectômetro quadrado $(hm^2) = 10.000 m^2 = 10^4 m^2$
+	\item Decâmetro quadrado $(dam^2) = 100 m^2 = 10^2 m^2$
+	
+\end{itemize}
+
+\subsection{Submúltiplos de metro quadrado}
+\begin{itemize}
+	\item Decímetro quadrado $(dm^2) = 0,01m^2 = 10^{-2}m^2$
+	\item centímetro quadrado $(cm^2) = 0,0001m^2 = 10^{-4}m^2$
+	\item Milímetro quadrado $(mm^2)= 0,000001m^2 = 10^{-6}m^2$
+\end{itemize}
+\section{Medidas Agrárias}
+Dentre as medidas de superfícies, existem as medidas
+agrárias, que são mais utilizadas para medir áreas rurais. Sua
+unidade fundamental é o are (a).
+
+\begin{itemize}
+	\item Centiare $(ca) = 1m^2=10^0m^2$
+	\item Are $(a)= 100m^2 = 10^2m^2$
+	\item Hectare $(ha) = 10000m^2 = 10^4m^2$
+\end{itemize}
+\section{Medidas de Volume} 
+As medidas de volume são utilizadas g
+para medir o espaço ocupado por um
+corpo tridimensional ou a sua
+capacidade de armazenar alguma
+substância. Em química, as medidas de
+volume geralmente aparecem quando
+medimos quantidades de líquidos. A
+unidade métrica tradicional de volume
+usada nesse caso é o litro (L). Em termos
+do SI, um litro é definido exatamente
+como 1 decímetro cúbico. 
+\subsection{Múltiplos do Metro Cubico:}
+\begin{itemize}
+    \item Quilômetro cúbico $(Km^3) = 1.000.000.000 m^3 = 10^9 m^3$
+    \item Hectômetro cúbico $(hm^3) = 1.000.000 m^3 = 10^6 m^3$
+    \item Decâmetro cúbico $(dam^3) = 1.000 m^3 = 10^3 m^3$
+\end{itemize}
+\subsection{Submúltiplos de metros cúbicos $(m^3)$}
+\begin{itemize}
+    \item Decímetro cúbico $(dm^3) = 0,001 m^3 = 10^{-3} m^3$
+    \item Centímetro cúbico $(cm^3) = 0,000001 m^3 = 10^{-6} m^3$
+    \item Milímetro cúbico $(mm^3) = 0,000000001 m^3 = 10^{-9} m^3$
+\end{itemize}
+\section{Medidas de Capacidade}
+As medidas de capacidade são utilizadas para representarem
+as grandezas que definem o volume contido em um certo
+reservatório. A mais utilizada é o litro (l).
+	\\\textbf{Importante:}
+\begin{itemize}
+    \item $1l = 1dm^3$
+    \item $1 ml = 1 cm^3$
+    \item $10^3 l = 1 m^3$
+\end{itemize}
+\subsection{Múltiplos de litro:}
+\begin{itemize}
+    \item Quilolitro $(Kl) = 1000 l = 10^3 l$
+    \item Hectolitro $(hl) = 100 l = 10^3 l$
+    \item Decalitro $(dal) = 10 l = 10^1l$
+\end{itemize}
+\subsection{Submúltiplos de Litro:}
+\begin{itemize}
+    \item Decilitro $(dl) = 0,1 l = 10^{-1}l$
+    \item Centilitro $(cl) = 0,01 l = 10^{-2}l$
+    \item Mililitro $(ml) = 0,001 l = 10^{-3}l$
+\end{itemize}
+\section{Medidas de Massa}
+As medidas de massa são utilizadas para medir a quantidade
+de massa em um corpo. No SI, a unidade fundamental de massa é
+o quilograma (kg), embora o grama (g) seja a unidade mais
+conveniente para a maioria das medidas de laboratório.
+\subsection{Múltiplos de Grama:}
+\begin{itemize}
+    \item Quilograma $(Kg) = 1000 g = 10^3 g$
+    \item Hectograma $(hg) = 100 g = 10^2 g$
+    \item Decagrama $(dag) = 10 g = 10^1 g$
+\end{itemize}
+\subsection{Submúltiplos de Grama:}
+\begin{itemize}
+    \item Decigrama $(dg) = 0,1 g = 10^{-1} g$
+    \item Centigrama $(cg) = 0,01 g = 10^{-2} g$
+    \item Miligrama $(mg) = 0,001 g = 10^{-3}$
+\end{itemize}
+Existe ainda a unidade especial:
+Tonelada $(t) = 1000 kg = 10^3 kg = 10^6 g$
+
+\section{Exercícios}
+
+Esta é um exemplo de exercício.
+\begin{exercise}
+Este é um bom lugar para fazer uma pergunta para testar o progresso da aprendizagem ou cimentar mais as idéias na mente dos alunos.
+\end{exercise}
+
+
+\chapter{Proporcionalidade}
+Este tópico é fundamental, não apenas em Matemática, como na Matemática Financeira, na Física  na Química.Toda vez que trabalhamos com comparação de grandezas, algo comum na Física por exemplo, estamos utilizando os conceitos básicos da proporção.   
+
+\section{Razão}
+Razão pode ser definida como o quociente (divisão ou fração) entre dois números reais, sendo o quociente do primeiro número com o segundo número. Desta forma, a razão entre os números $"a"$ e $"b"$ será o quociente:
+
+\begin{center}
+	$\frac{a}{b}$ ou $a:b$, para $(b \neq 0)$. 	Sendo lida da seguinte forma: 
+	$"a"$ está para $"b"$
+\end{center}
+
+\begin{example}
+A razão $\frac{2}{3}$ é lida da seguinte forma: 2 está para 3.
+\end{example}
+
+\noindent Ou seja, basicamente vamos ter numa razão a divisão entre um número real $"a"$ e um número real $"b"$ que resultará em um número real $"c"$. Isto é:  
+
+\begin{center}
+	$\frac{a}{b} = c$ 
+\end{center}
+
+\begin{example}
+   $\frac{3}{2} = 1,5$
+\end{example}
+
+\section{Proporção}
+
+Proporção é definida como a igualdade entre duas ou mais razões. Isto é:
+
+\begin{center}
+    $\frac{a}{b} = \frac{c}{d}$, para $(b$ e $d \neq 0)$
+\end{center}
+
+Onde $"a"$ e $"d"$ são denominados extremos da proporção , $"b"$ e $"c"$ são os meios da proporção
+
+\section{Escalas}
+
+\begin{itemize}
+	\item Escala
+	\subitem Definição de escala 
+	\subitem Esvala de apliação
+	\subitem Escala de redução
+\end{itemize}
+
+\section{Porcentagem}
+\begin{itemize}
+	\item Razão centezimal
+	\item Fator de multiplicação
+	\item Interpretação situacional
+\end{itemize}
+
+\section{Exercícios}
+
+Esta é um exemplo de exercício.
+
+\begin{exercise}
+Este é um bom lugar para fazer uma pergunta para testar o progresso da aprendizagem ou cimentar mais as idéias na mente dos alunos.
+\end{exercise}
+
+
+\part{Geometria}
+\chapter{Geometria Plana}
+    \section{Classificação dos polígonos}
+    
+    \section{Área dos polígonos}
+    
+    \section{Exercícios}
+        Esta é um exemplo de exercício.
+        \begin{exercise}
+        Este é um bom lugar para fazer uma pergunta para testar o progresso da aprendizagem ou cimentar mais as idéias na mente dos alunos.
+        \end{exercise} 
+        
+\chapter{Geometria Espacial}
+    
+\chapter{Geometria Analítica}
+
+
+\part{Funções}
+\chapter{Introdução}
+
+\chapter{Função injetora ou injetiva}
+
+\chapter{Função sobrejetora ou sobrejetiva}
+
+\chapter{Função bijetora ou bijetiva}
+
+\chapter{Função constante}
+
+\chapter{Função par}
+
+\chapter{Função ímpar}
+
+\chapter{Função afim ou polinomial do primeiro grau}
+    \begin{itemize}
+    	\item O que é uma função
+    	\item Domínio e imagem de uma função
+    	\item Obtenção do domínio
+    	\item Construção do gráfico cartesiano
+    	\item Raízes de uma função
+    	\item Propriedades de uma função
+    	\item Função par e função ímpar
+    	\item Funções crescente e decrescente
+    	\item Função composta
+    	\item Função inversa
+    \end{itemize}
+
+\chapter{Função linear}
+
+\chapter{Função crescente}
+
+\chapter{Função decrescente}
+
+\chapter{Função quadrática ou polinomial do segundo grau}
+
+\chapter{Função modular}
+
+\chapter{Função exponencial}
+
+\chapter{Função logarítmica}
+
+\chapter{Função trigonométrica}
+
+\chapter{Função raiz}
+
+
+\section{Gráficos e Tabelas}% OK
+\begin{itemize}
+	\item Leitura e interpretação de gráficos (sistema ortogonal)
+\end{itemize}
+
+\section{Estatística}%ok
+\begin{itemize}
+	\item Rol
+	\item Classe
+	\item Moda, Média e mediana 
+\end{itemize}
+
+\section{Probabilidade}%ok
+\begin{itemize}
+	\item Espaço Amostral
+	\item Eventos (seus tipos)
+	\item Conceito de Probabilidade
+	\item Probabilidade Condicional
+	\item Multiplicação de Probabilidade
+	\item Fórmulas.
+\end{itemize}
+
+\section{Trigonometria no Triângulo Retângulo}
+
+\begin{itemize}
+	\item   Definições de um triangulo retangulo
+	\item razões trigonometricas
+	\item Lei dos senos
+\end{itemize}
+
+\section{Análise Combinatória}%ok
+\begin{itemize}
+	\item Fatorial
+	\item Arranjo simples
+	\item Permutação simples
+	\item Combinação simples
+\end{itemize}
+
+\section{Geometria Analítica}%ok
+\begin{itemize}
+	\item Fatorial
+	\item Arranjo simples
+	\item Permutação simples
+	\item Combinação simples
+\end{itemize}
+
+\begin{center}
+\textbf{EXERCÍCIOS}
+    
+\end{center}
+	\begin{itemize}
+		\item Fatorial
+		\item Arranjo simples
+		\item Permutação simples
+		\item Combinação simples
+	\end{itemize}
+\end{document}
