@@ -1,0 +1,10 @@
+Width = 793.59998
+Height = 396.79999
+
+Header Caps
+Width = 4757.33350
+Height = 2378.66675
+
+Capa
+Width = 776.00000
+Height = 1109.33325
