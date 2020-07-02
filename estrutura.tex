@@ -4,6 +4,7 @@
 \usepackage[brazil]{babel}
 \usepackage{microtype} % Slightly tweak font spacing for aesthetics
 \usepackage[utf8]{inputenc} % Required for including letters with accents
+\usepackage{csquotes} % Pediu para ser recarregado após o inputenc, estudar o pacote
 \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
 \usepackage{import}
 \usepackage{tikz}
@@ -13,13 +14,13 @@
 \usepackage{booktabs} % Required for nicer horizontal rules in tables
 
 \usepackage{xcolor} % Necessário para especificar cores por nome
-\definecolor{corprimaria}{RGB}{10,48,123} % Definir a cor que será usada para realçar ao longo do livro
+\definecolor{corprimaria}{RGB}{10,48,123} % Define a cor que será usada para realçar ao longo do livro
 \definecolor{corsecundaria}{RGB}{116,23,255}
 \definecolor{corterciaria}{RGB}{116,23,255}
 
-%----------------------------------------------------------------------------------------
+
 %	MARGENS
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------
 
 \usepackage{geometry} 
 
@@ -35,20 +36,20 @@
 	%showframe, % Uncomment to show how the type block is set on the page
 }
 
-%----------------------------------------------------------------------------------------
+
 %	FONTES
-%----------------------------------------------------------------------------------------
+%---------------------------------------------------------------------
 
 %\usepackage{avant} % Use the Avantgarde font for headings
 %\usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym­bol, Chancery and Com­puter Modern fonts
 \usepackage{times} % Use the Times font for headings
 
 
-%----------------------------------------------------------------------------------------
-%	BIBLIOGRAPHY AND INDEX
-%----------------------------------------------------------------------------------------
 
-\usepackage[style=numeric,citestyle=numeric,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
+%	BIBLIOGRAPHY AND INDEX
+%-------------------------------------------------------------------
+
+\usepackage[style=numeric,citestyle=numeric,sorting=nyt,sortcites=true,autopunct=true,autolang=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
 \addbibresource{bibliography.bib} % BibTeX bibliography file
 \defbibheading{bibempty}{}
 
@@ -56,9 +57,8 @@
 \usepackage{makeidx} % Required to make an index
 \makeindex % Tells LaTeX to create the files required for indexing
 
-%----------------------------------------------------------------------------------------
 %	ÍNDICE PRINCIPAL
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------
 
 \usepackage{titletoc} % Necessário para manipular o índice
 
@@ -112,9 +112,9 @@
 	{} % Formatting of numberless sections of this type
 	{\ \titlerule*[.5pc]{.}\;\thecontentspage} % Formatting of the filler to the right of the heading and the page number
 
-%----------------------------------------------------------------------------------------
+
 %	MINI TABLE OF CONTENTS IN PART HEADS
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------
 
 % Estilo do texto do capítulo
 \titlecontents{lchapter}
@@ -140,9 +140,9 @@
 	{}
 	{}
 
-%----------------------------------------------------------------------------------------
+
 %	CABEÇALHOS E RODAPÉS
-%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------
 
 \usepackage{fancyhdr} % Necessário para configuração de cabeçalho e rodapé
 
@@ -173,9 +173,9 @@
 \newpage
 \fi}
 
-%----------------------------------------------------------------------------------------
+
 %	ESTILO DE TEOREMA
-%----------------------------------------------------------------------------------------
+%---------------------------------------------------------------------
 
 \usepackage{amsmath,amsfonts,amssymb,amsthm}
 \everymath{\displaystyle}
@@ -249,9 +249,9 @@
 \theoremstyle{corprimarianum}
 \newtheorem{proposition}[dummy]{Proposition}
 
-%----------------------------------------------------------------------------------------
+
 %	DEFINIÇÃO DE CAIXAS COLORIDAS
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------
 
 \RequirePackage[framemethod=default]{mdframed} % Required for creating the theorem, definition, exercise and corollary boxes
 
@@ -324,9 +324,9 @@ innerbottommargin=5pt]{cBox}
 \newenvironment{example}{\begin{exampleT}}{\hfill{\tiny\ensuremath{\blacksquare}}\end{exampleT}}		
 \newenvironment{corollary}{\begin{cBox}\begin{corollaryT}}{\end{corollaryT}\end{cBox}}	
 
-%----------------------------------------------------------------------------------------
+
 %	REMARK ENVIRONMENT
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------
 
 \newenvironment{remark}{\par\vspace{10pt}\small % Vertical white space above the remark and smaller font size
 \begin{list}{}{
@@ -336,9 +336,9 @@ innerbottommargin=5pt]{cBox}
 \node[draw=corprimaria!60,line width=1pt,circle,fill=corprimaria!25,font=\sffamily\bfseries,inner sep=2pt,outer sep=0pt] at (-15pt,0pt){\textcolor{corprimaria}{R}};\end{tikzpicture}} % Orange R in a circle
 \advance\baselineskip -1pt}{\end{list}\vskip5pt} % Tighter line spacing and white space after remark
 
-%----------------------------------------------------------------------------------------
+
 %	SECTION NUMBERING IN THE MARGIN
-%----------------------------------------------------------------------------------------
+%---------------------------------------------------------------------
 
 \makeatletter
 \renewcommand{\@seccntformat}[1]{\llap{\textcolor{corprimaria}{\csname the#1\endcsname}\hspace{1em}}}                    
@@ -359,10 +359,9 @@ innerbottommargin=5pt]{cBox}
 {.1ex}
 {\normalfont\small\sffamily\bfseries}}
 
-%----------------------------------------------------------------------------------------
-%	PART HEADINGS
-%----------------------------------------------------------------------------------------
 
+%	PART HEADINGS
+%---------------------------------------------------------------------------
 % Numbered part in the table of contents
 \newcommand{\@mypartnumtocformat}[2]{%
 	\setlength\fboxsep{0pt}%
@@ -428,10 +427,9 @@ innerbottommargin=5pt]{cBox}
 \twocolumn
 \fi}
 
-%----------------------------------------------------------------------------------------
-%	CHAPTER HEADINGS
-%----------------------------------------------------------------------------------------
 
+%	CHAPTER HEADINGS
+%--------------------------------------------------------------------------
 % A switch to conditionally include a picture, implemented by Christian Hupfer
 \newif\ifusechapterimage
 \usechapterimagetrue
@@ -475,12 +473,11 @@ innerbottommargin=5pt]{cBox}
 \par\vspace*{270\p@}}
 \makeatother
 
-%----------------------------------------------------------------------------------------
-%	LINKS
-%----------------------------------------------------------------------------------------
 
-\usepackage{hyperref}
-\hypersetup{hidelinks,backref=true,pagebackref=true,hyperindex=true,colorlinks=false,breaklinks=true,urlcolor=corprimaria,bookmarks=true,bookmarksopen=false}
+%	LINKS
+%-------------------------------------------------------------------------
+\usepackage{hyperref} % ESTUDAR SOBRE ESSE PACOTE E RESOLVER O PROBLEMA ABAIXO
+% \hypersetup{hidelinks,backref=true,pagebackref=true,hyperindex=true,colorlinks=false,breaklinks=true,urlcolor=corprimaria,bookmarks=true,bookmarksopen=false} 
 
 \usepackage{bookmark}
 \bookmarksetup{
