@@ -1,100 +1,40 @@
 \documentclass[11pt,fleqn]{book}
-
-\input{estrutura.tex}
+\usepackage{import}
+\input{estrutura/esqueleto.tex}
 \hypersetup{pdftitle={Matemática no ENEM},pdfauthor={Lucas Felinto, Marcelo Júnior e Matheus Jonatha}}
 
 \begin{document}
+\import{estrutura/}{capa} % CAPA
+\import{partes/}{copyright} % PÁGINA DE DIREITOS AUTORAIS
 
-% CAPA
-%----------------------------------------------------------
-\begingroup
-\thispagestyle{empty} % Esconde cabeçalhos e rodapés na página atual
-    \begin{tikzpicture}[remember picture,overlay]
-        \node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{capa.pdf}};
-    \end{tikzpicture}
-\endgroup
-
-\import{/}{copyright} % PÁGINA DE DIREITOS AUTORAIS
-
-% SUMÁRIO
-%----------------------------------------------------------
-%\usechapterimagefalse % Desativa as imagens que ficam no inicio de cada capítulo, para ativar posteriormente basta chamar \usechapterimagetrue
-
-\chapterimage{headers/headerLogo.pdf} % Imagem do cabeçalho do sumário
-\pagestyle{empty} % Desativa o cabeçalhos e rodapés, até que seja ativado novamente com \pagestyle{fancy
-\tableofcontents % Mostra o índice (sumário)
-\cleardoublepage % Força o primeiro capítulo a começar em uma página ímpar, para que fique do lado direito do livro
-\pagestyle{fancy} % Ativar cabeçalhos e rodapés novamente
-
-% SOBRE O PROJETO
-%-----------------------------------------------------------
-\addcontentsline{toc}{chapter}{Sobre o projeto}
-\chapter*{Sobre o projeto}
-Sabemos que os assuntos abordados no ENEM são vastos, afinal são muitas as disciplinas que os estudantes têm contato durante a vida escolar. Mesmo uma única disciplina como história, por exemplo, cobra uma gama enorme de informação e conhecimento por parte dos estudantes. Portanto, nada melhor que organizar e priorizar seu tempo de estudo.
-
-Por isso, Elaboramos este documento com o intuito de lhe ajudar. Elencamos os 10 assuntos que possuem maior número de questões no ENEM na área do conhecimento da Matemática e suas Aplicações. Além de você saber quais são os assuntos mais exigidos, também saberá o que é preciso pra estudá-los. A lista segue do assunto mais cobrado ao mesmo cobrado.
-
-\addcontentsline{toc}{chapter}{Habilidades e competências}
-\chapter*{Habilidades e competências}
-\import{/}{habilidades}
+\chapterimage{estrutura/imgs/headers/headerLogo.pdf} % IMAGEM CABEÇALHO
+\import{partes/}{sumario} % SUMÁRIO
+\import{partes/}{sobre} % SOBRE O PROJETO
+\import{partes/}{habilidades} % HABILIDADES E COMPETÊNCIAS
 
 % ESTRUTURA DO LIVRO
 %----------------------------------------------------------
 \part{Matemática Básica}
-\chapterimage{headers/chapter_head_2.pdf}
+\chapterimage{estrutura/imgs/headers/chapter_head_2.pdf}
 %\chapterimage{headers/headerMatematicaBasica.pdf}
-\import{partes/partMatematicaBasica/}{aritmetica}
-\import{partes/partMatematicaBasica/}{sistemaDeUnidades}
-\import{partes/partMatematicaBasica/}{proporcionalidade}
-\import{partes/partMatematicaBasica/}{tabelasEGraficos}
-\import{partes/partMatematicaBasica/}{estatistica}
+\import{partes/matematicaBasica/}{aritmetica}
+\import{partes/matematicaBasica/}{sistemaDeUnidades}
+\import{partes/matematicaBasica/}{proporcionalidade}
+\import{partes/matematicaBasica/}{tabelasEGraficos}
+\import{partes/matematicaBasica/}{estatistica}
 
 \part{Geometria}
 %\chapterimage{headers/headerGeometria.pdf}
-\import{partes/partGeometria/}{geometriaPlana}
-\import{partes/partGeometria/}{geometriaEspacial}
-\import{partes/partGeometria/}{geometriaAnalitica}
+\import{partes/geometria/}{geometriaPlana}
+\import{partes/geometria/}{geometriaEspacial}
+\import{partes/geometria/}{geometriaAnalitica}
 
 \part{Conjuntos}
 %\chapterimage{headers/headerConjuntos.pdf}
-\import{partes/partConjuntos/}{conjuntos}
+\import{partes/conjuntos/}{conjuntos}
 
 \part{Funções}
 %\chapterimage{headers/headerFuncoes.pdf}
-\import{partes/partFuncoes/}{funcoes}
-
-
-\section{Gráficos e Tabelas}% OK
-\begin{itemize}
-	\item Leitura e interpretação de gráficos (sistema ortogonal)
-\end{itemize}
-
-\section{Trigonometria no Triângulo Retângulo}
-
-	\begin{itemize}
-		\item   Definições de um triangulo retangulo
-		\item razões trigonometricas
-		\item Lei dos senos
-	\end{itemize}
-	
-\section{Probabilidade}%ok
-
-	\begin{itemize}
-		\item Espaço Amostral
-		\item Eventos (seus tipos)
-		\item Conceito de Probabilidade
-		\item Probabilidade Condicional
-		\item Multiplicação de Probabilidade
-		\item Fórmulas.
-	\end{itemize}
-
-\section{Análise Combinatória}%ok
-
-	\begin{itemize}
-		\item Fatorial
-		\item Arranjo simples
-		\item Permutação simples
-		\item Combinação simples
-	\end{itemize}
+\import{partes/funcoes/}{funcoes}
 
 \end{document}

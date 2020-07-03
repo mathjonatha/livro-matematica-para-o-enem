@@ -1,0 +1,32 @@
+\section{Gráficos e Tabelas}% OK
+\begin{itemize}
+	\item Leitura e interpretação de gráficos (sistema ortogonal)
+\end{itemize}
+
+\section{Trigonometria no Triângulo Retângulo}
+
+	\begin{itemize}
+		\item   Definições de um triangulo retangulo
+		\item razões trigonometricas
+		\item Lei dos senos
+	\end{itemize}
+	
+\section{Probabilidade}%ok
+
+	\begin{itemize}
+		\item Espaço Amostral
+		\item Eventos (seus tipos)
+		\item Conceito de Probabilidade
+		\item Probabilidade Condicional
+		\item Multiplicação de Probabilidade
+		\item Fórmulas.
+	\end{itemize}
+
+\section{Análise Combinatória}%ok
+
+	\begin{itemize}
+		\item Fatorial
+		\item Arranjo simples
+		\item Permutação simples
+		\item Combinação simples
+	\end{itemize}
