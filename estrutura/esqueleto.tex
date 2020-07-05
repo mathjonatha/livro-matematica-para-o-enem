@@ -342,17 +342,18 @@ linewidth=4pt,
 innerbottommargin=5pt]{cBox}
 
 % Creates an environment for each type of theorem and assigns it a theorem text style from the "Theorem Styles" section above and a colored box from above
-\newenvironment{theorem}{\begin{tBox}\begin{theoremeT}}{\end{theoremeT}\end{tBox}}
 %\newenvironment{exercise}{\begin{eBox}\begin{exerciseT}}{\hfill{\color{corprimaria}\tiny\ensuremath{\blacksquare}}\end{exerciseT}\end{eBox}}				  				  
-\newenvironment{definition}{\begin{dBox}\begin{definitionT}}{\end{definitionT}\end{dBox}}	
 %\newenvironment{example}{\begin{exampleT}}{\hfill{\tiny\ensuremath{\blacksquare}}\end{exampleT}}		
+\newenvironment{definition}{\begin{dBox}\begin{definitionT}}{\end{definitionT}\end{dBox}}	
+%\newenvironment{definition}{\begin{caixaEX}\begin{definitionT}}{\end{definitionT}\end{caixaEx}}	
+\newenvironment{theorem}{\begin{tBox}\begin{theoremeT}}{\end{theoremeT}\end{tBox}}
 \newenvironment{corollary}{\begin{cBox}\begin{corollaryT}}{\end{corollaryT}\end{cBox}}	
 \newenvironment{exercicio}{\begin{caixaEx}\begin{exercicioT}}{\end{exercicioT}\end{caixaEx}}
 
 % NOVOS ENVIROMENT
-\newenvironment{exercise}{\begin{eBox}\begin{exerciseT}}{\hfill{\color{corprimaria}\tiny}\end{exerciseT}\end{eBox}}
-\newenvironment{example}{\begin{exampleT}}{\hfill{\tiny}\end{exampleT}}		
-
+\newenvironment{exercise}{\begin{eBox}\begin{exerciseT}}{\hfill{\color{corprimaria}\tiny}\end{exerciseT}\end{eBox}}				  				  
+\newenvironment{example}{\begin{exampleT}}{\hfill{\tiny}\end{exampleT}}
+%\newenvironment{example}{\begin{exampleT}}{\hfill{\hfill{\color{corsecundaria}\tiny}\end{exampleT}}
 %	REMARK ENVIRONMENT
 %--------------------------------------------------------------------
 
