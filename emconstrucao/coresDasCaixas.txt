@@ -14,8 +14,11 @@ innertopmargin=5pt,
 innerbottommargin=5pt,
 leftmargin=0cm,
 rightmargin=0cm,
-linewidth=4pt]{caixaEx}	
+linewidth=4pt]{caixaExercicio}	
 
-\newenvironment{exercicio}{\begin{caixaEx}\begin{exercicioT}}{\end{exercicioT}\end{caixaEx}}
 
 \newtheorem{exercicioT}[dummy]{Exercício}
+
+% NOVOS ENVIROMENT
+\newenvironment{exercise}{\begin{caixaExercicio}\begin{exerciseT}}{\hfill{\color{corprimaria}\tiny}\end{exerciseT}\end{caixaExercicio}}
+\newenvironment{example}{\begin{exampleT}}{\hfill{\tiny}\end{exampleT}}		
