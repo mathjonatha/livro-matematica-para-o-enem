@@ -8,7 +8,7 @@ Sabemos que os assuntos abordados no ENEM são vastos, afinal são muitas as dis
 Por isso, Elaboramos este documento com o intuito de lhe ajudar. Elencamos os 10 assuntos que possuem maior número de questões no ENEM na área do conhecimento da Matemática e suas Aplicações. Além de você saber quais são os assuntos mais exigidos, também saberá o que é preciso pra estudá-los. A lista segue do assunto mais cobrado ao mesmo cobrado.
 
 ## Como ajudar
-Caso encontre algum erro e deseje relatar, pode enviar um email para mthsjonatha@gmail.com, se você sabe LaTeX fique a vontade para fazer pull request.
+Caso encontre algum erro e deseje relatar, pode enviar um email para mthsjonatha@gmail.com, se você sabe LaTeX fique a vontade para fazer pull requests.
 
 ## Licença
 

@@ -18,6 +18,7 @@
 \definecolor{corsecundaria}{RGB}{116,23,255}
 \definecolor{corterciaria}{RGB}{116,23,255}
 \definecolor{corexercicio}{RGB}{3,34,84}
+\definecolor{corobs}{RGB}{255,0,0}
 
 
 
@@ -256,7 +257,7 @@
 
 % CRIADOS PARA O PROJETO
 \newtheorem{exercicioT}[dummy]{Exercício}
-
+\newtheorem{obsT}{Observação}
 %	DEFINIÇÃO DE CAIXAS COLORIDAS
 %--------------------------------------------------------------------
 
@@ -308,6 +309,23 @@ leftmargin=0cm,
 rightmargin=0cm,
 linewidth=4pt]{caixaEx}	
 
+% Caixa de observações	  
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+rightline=false,
+leftline=true,
+topline=false,
+bottomline=false,
+backgroundcolor=corobs!10,
+linecolor=corobs,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+innerbottommargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+linewidth=4pt]{caixaObs}	
+
 % Definition box
 \newmdenv[skipabove=7pt,
 skipbelow=7pt,
@@ -351,7 +369,11 @@ innerbottommargin=5pt]{cBox}
 \newenvironment{exercicio}{\begin{caixaEx}\begin{exercicioT}}{\end{exercicioT}\end{caixaEx}}
 
 % NOVOS ENVIROMENT
-\newenvironment{exercise}{\begin{eBox}\begin{exerciseT}}{\hfill{\color{corprimaria}\tiny}\end{exerciseT}\end{eBox}}				  				  
+\newenvironment{exercise}{\begin{eBox}\begin{exerciseT}}{\hfill{\color{corprimaria}\tiny}\end{exerciseT}\end{eBox}}				
+
+\newenvironment{obs}{\begin{caixaObs}\begin{obsT}}{\end{obsT}\end{caixaObs}}
+
+
 \newenvironment{example}{\begin{exampleT}}{\hfill{\tiny}\end{exampleT}}
 %\newenvironment{example}{\begin{exampleT}}{\hfill{\hfill{\color{corsecundaria}\tiny}\end{exampleT}}
 %	REMARK ENVIRONMENT
